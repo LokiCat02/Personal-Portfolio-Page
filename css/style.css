@@ -11,7 +11,7 @@
     --first-color: hsl(var(--hue-color), 78.7%, 46.1%);
     --first-color-second: hsl(var(--hue-color), 71%, 47%);
     --first-color-alt: hsl(var(--hue-color), 55%, 50%);
-    --first-color-lighter: hsl(var(--hue-color), 90%, 82%);
+    --first-color-lighter: hsl(var(--hue-color), 90%, 70%);
 
     --title-color: hsl(var(--hue-color), 10%, 15%);
     --text-color: hsl(var(--hue-color), 10%, 40%);
@@ -360,7 +360,7 @@ img{
     display: flex;
     gap: 1.75rem;
     padding-left: 0;
-    margin-left: var(--mb-1);
+    /* margin-left: var(--mb-1); */
     justify-content: space-around;
     align-items: center;
 }
@@ -400,8 +400,7 @@ img{
     width: 600px;
     align-content: center;
     text-align: center;
-    transform: translateX(-4rem);
-    margin-right: 75px;
+    /* transform: translateX(-2rem); */
 }
 
 .home__welcome{
@@ -492,7 +491,7 @@ img{
 .home__scroll-mouse{
     font-size: var(--big-font-size);
     margin-top: var(--mb-3);
-    margin-right: 35px;
+    /* margin-right: 35px; */
 }
 
 .home__scroll-name{
@@ -513,6 +512,8 @@ img{
 }
 .about__img{
     width: 200px;
+    height: 300px;
+    object-fit: cover;
     border-radius: .5rem;
     margin-bottom: var(--mb-2);
     display: inline-flex;
@@ -1467,9 +1468,9 @@ img{
       column-gap: 2rem;
     }
     
-    .home__scroll-button{
+    /* .home__scroll-button{
       margin-left: 3rem;
-    }
+    } */
 
     .about{
       margin-top: 4rem;
@@ -1480,6 +1481,8 @@ img{
 
     .about__img{
       width: 350px;
+      height: 300px;
+      object-fit: cover;
     }
 
     .about__description{

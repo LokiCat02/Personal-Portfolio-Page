@@ -94,7 +94,7 @@
     <!-- ------------- HOME -------------------->
         <section class="home section" id="home">
             <div class="home__container container grid">
-
+<!-- 
                 <div class="home__content grid">
                     <div class="home__social">
                         <a href="" target="_blank" class="home__social-icon" id="myLinkedIn">
@@ -117,7 +117,7 @@
                             <i class="uil uil-twitter-alt"></i>
                         </a>
                     </div>
-                </div>
+                </div> -->
 
                 <div class="home__data">
                     <small class="home__welcome s-color"> Welcome to my Portfolio Website! </small>
@@ -134,8 +134,6 @@
             <div class="home__scroll">
                 <a href="#about" class="home__scroll-button button--flex">
                     <i class="uil uil-mouse-alt home__scroll-mouse"></i>
-                    <!-- <span class="home__scroll-name"> Scroll Down </span>
-                    <i class="uil uil-arrow-down home__scroll-arrow"></i> -->
                 </a>
             </div>
         </section>
@@ -143,21 +141,27 @@
     <!-- ------------- ABOUT ME -------------------->
         <section class="about section" id="about">
             <h2 class="section__title">About</h2>
-            <span class="section__subtitle"> My Introduction </span>
+            <span class="section__subtitle" style="margin-bottom: 12px;"> Me </span>
 
             <div class="about__container container grid">
-                <img src="assets/img/ceremony.JPG" alt="my achievement photo" class="about__img">
+                <img src="assets/img/ManuelAndElias.JPG" alt="Manuel and his son" class="about__img">
 
                 <div class="about__data">
                     <p class="about__description" id="home-about"> 
                         Software Engineer with experience developing high quality applications and implementing software solutions for the manufacturing industry.
+                        Also, a gym fanatic, loves to eat his wife's deliocious food and loves playing with his son.
                     </p>
                 </div>
 
                 <div class="about__info">
                     <div>
-                        <span class="about__info-title"> 05+ </span>
-                        <span class="about__info-name"> Years <br> Experience </span>
+                        <span class="about__info-title"> 5+ </span>
+                        <span class="about__info-name"> Years <br> Software Dev Experience </span>
+                    </div>
+
+                    <div>
+                        <span class="about__info-title"> 10+ </span>
+                        <span class="about__info-name"> Years <br> Manufacturing Experience </span>
                     </div>
 
                     <div>
@@ -166,31 +170,64 @@
                     </div>
 
                     <div>
-                        <span class="about__info-title"> 03+ </span>
-                        <span class="about__info-name"> Companies <br> Worked </span>
+                        <span class="about__info-title"> CS </span>
+                        <span class="about__info-name"> Bachelor <br> Science </span>
+                    </div>
+                    <div>
+                        <span class="about__info-title"> AS </span>
+                        <span class="about__info-name"> Robotics <br> & Automation </span>
+                    </div>
+
+                    <div class="about__buttons">
+                        <a href="assets/file/CV.pdf" download="my_CV" target="_blank" class="button button--flex">
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
+                        </a>
                     </div>
                 </div>
 
-                <div class="about__buttons">
+                <!-- <div class="about__buttons">
                     <a href="assets/file/CV.pdf" download="my_CV" target="_blank" class="button button--flex">
                         Download CV <i class="uil uil-download-alt button__icon"></i>
                     </a>
-                </div>
+                </div> -->
             </div>
         </section>
 
     <!-- ------------- Skills-------------------->
         <section class="skills section" id="skills">
-            <h2 class="section__title"> Skillset </h2>
-            <span class="section__subtitle"> My skillsets </span>
+            <h2 class="section__title"> Skills</h2>
+            <span class="section__subtitle"> My skillsets summary </span>
 
             <div class="skills__container container grid">
                 <div class="row" id="skillset_container">
-                    <!-- Skill 1 -->
+
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/HTML_5-595b40b65ba036ed117d4260_fnyo1z.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/csharplogo.png" alt="C# Logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> C# </h2>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx">
+                                <img src="assets/skills-logos/angular.svg" alt="Angular Logo">
+                            </div>
+                            <div class="contentBx">
+                                <h2> Angular </h2>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="skills__container-card">
+                        <div class="card_skill shadow2">
+                            <div class="imgBx">
+                                <img src="assets/skills-logos/HTMLlogo.svg" alt="HTML logo">
                             </div>
                             <div class="contentBx">
                                 <h2> HTML </h2>
@@ -202,7 +239,7 @@
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/Css3-595b40b65ba036ed117d3eb8_jiqifm.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/CSSlogo.svg" alt="CSS logo">
                             </div>
                             <div class="contentBx">
                                 <h2> CSS </h2>
@@ -210,201 +247,80 @@
                         </div>
                     </div>
 
-                    <!-- Skill 3 -->
+
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831744/skillset%20logos/javascript-seeklogo.com_wthmgd.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/tslogo.svg" alt="TypeScript logo">
                             </div>
                             <div class="contentBx">
-                                <h2> Javascript </h2>
+                                <h4> TypeScript </h4>
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Skill 4 -->
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/bootstrap-5-seeklogo.com_rz32ih.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/JSLogo.svg" alt="JavaScript logo">
                             </div>
                             <div class="contentBx">
-                                <h2> Bootstrap </h2>
+                                <h4> JavaScript </h4>
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Skill 5 -->
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/python-seeklogo.com_sbuevg.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/Bootstraplogo.svg" alt="BootStrap logo">
                             </div>
                             <div class="contentBx">
-                                <h2> Python </h2>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Skill 5 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/django-seeklogo.com_uu8wtb.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Django </h2>
+                                <h3> Bootstrap </h3>
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Skill 6 -->
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831743/skillset%20logos/git-seeklogo.com_eqv1dl.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/highchartslogo.png" alt="Highcharts logo">
                             </div>
                             <div class="contentBx">
-                                <h2> Git </h2>
+                                <h4> Highcharts </h4>
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Skill 7 -->
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831742/skillset%20logos/github-seeklogo.com_yhhbou.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/sqllogo.png" alt="Sql logo">
                             </div>
                             <div class="contentBx">
-                                <h2> Github </h2>
+                                <h3> SQL </h3>
                             </div>
                         </div>
                     </div>
 
-                    <!-- Skill 8 -->
                     <div class="skills__container-card">
                         <div class="card_skill shadow2">
                             <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831746/skillset%20logos/visual-studio-code-seeklogo.com_ps85dh.svg" alt="HTML logo">
+                                <img src="assets/skills-logos/VSCodelogo.svg" alt="VS Code logo">
                             </div>
                             <div class="contentBx">
-                                <h2> VS Code </h2>
+                                <h3 style="white-space: nowrap;"> VS Code </h3>
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Skill 9 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/tux-seeklogo.com_aiyr1d.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Linux </h2>
-                            </div>
-                        </div>
-                    </div>
-
-
-                    <!-- Skill 10 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627837663/skillset%20logos/Microsoft_Office_logo__282019_E2_80_93present_29_pswha1.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Office </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 11 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627837103/skillset%20logos/Google_Docs_icon__282020_29_ix96yl.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Docs </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 12 -->
-                    
-
-                    <!-- Skill 13 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831745/skillset%20logos/matlab-seeklogo.com_zbczqr.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> MATLAB </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 14 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831746/skillset%20logos/Proteus_Design_Suite_Atom_Logo_nxdhe8.png" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Proteus </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 15 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627831743/skillset%20logos/autocad-logo-C9817CB828-seeklogo.com_mscdmi.png" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> AutoCAD </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 16 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627832183/skillset%20logos/adobe-premiere-seeklogo.com_ifitqg.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Premiere </h2>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Skill 17 -->
-                    <div class="skills__container-card">
-                        <div class="card_skill shadow2">
-                            <div class="imgBx">
-                                <img src="https://res.cloudinary.com/bjha/image/upload/v1627832183/skillset%20logos/adobe-photoshop-cc-seeklogo.com_wtay5k.svg" alt="HTML logo">
-                            </div>
-                            <div class="contentBx">
-                                <h2> Photoshop </h2>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </section>
     <!-- ------------- QUALIFICATIONS (Education and Experience) -------------------->
         <section class="qualification section" id="qualifications">
             <h2 class="section__title"> Qualification </h2>
-            <span class="section__subtitle"> My persoanl Journey </span>
+            <span class="section__subtitle"> My personal Journey </span>
 
             <div class="qualification__container container">
 
