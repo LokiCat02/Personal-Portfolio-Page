@@ -24,6 +24,10 @@
 
     <!-- Personal  Styling -->
     <link rel="stylesheet" href="css/style.css">
+
+    <!-- Jquery Styles -->
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
     
     <title>Manuel Marin</title>
   </head>
@@ -181,7 +185,7 @@
 
                     <div class="about__buttons">
                         <a href="assets/file/resume.pdf" download="Manuel_Marin_Resume" target="_blank" class="button button--flex">
-                            Resume <i class="uil uil-download-alt button__icon"></i>
+                            Download CV <i class="uil uil-download-alt button__icon"></i>
                         </a>
                     </div>
                 </div>
@@ -760,14 +764,14 @@
                             <span class="contact__subtitle"> Austin, TX</span>
                         </div>
                     </div>
-
                 </div>
 
                 <!-- FORM -->
+               <div id="email-sent-msg" title="Email Sent">Thank you for contacting me, I'll get back to you as soon as possible.</div>
+        
                 <div class="col-lg-6 pl-lg-4 mt-lg-0 mt-6 contact-form" id="message-me">
                     <h2 class="contact__title"> Interested to work together? - <span> Let's talk </span></h2>
-
-                    <form action="#" method="POST" class="cf">
+                    <form onsubmit="sendEmail(); return false"; class="cf">
                         <div class="row">
                             <div class="col-lg-6">
                                 <input type="text" name="message-name" id="sender-name" class="form-control form__color mb-30 cf" placeholder="Your Name">
@@ -790,6 +794,9 @@
                         </div>
                     </form>
                 </div>
+
+
+
             </div>
         </section>
     </main>
@@ -852,12 +859,6 @@
         <i class="uil uil-arrow-up scrollup__icon"></i>
     </a>
 
-
-
-
-
-
-
     <!-- Core -->
     <script src="js/core/jquery.min.js"></script>
     <script src="js/core/popper.min.js"></script>
@@ -875,8 +876,17 @@
     <!-- Self Script -->
     <script src="js/script.js"></script>
 
-    <!-- email smpt server -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <!--Email SMTP-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("s8RWmcfgZ073qPT5E");
+        })();
+    </script>
+
+    <!--JQuery-->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
 
   </body>
 </html>

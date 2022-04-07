@@ -137,3 +137,48 @@ function scrollActive() {
   });
 }
 window.addEventListener("scroll", scrollActive);
+
+//==================================== Send Email ====================================================
+$(document).ready(function () {
+  $("#email-sent-msg").dialog({
+    autoOpen: false,
+    height: 200,
+    width: 400,
+    modal: true,
+    resizable: false,
+    buttons: {
+      Ok: function () {
+        $(this).dialog("close");
+      },
+    },
+  });
+});
+
+function sendEmail(params) {
+  let tempParams = {
+    subject: document.getElementById("email-subject").value,
+    name: document.getElementById("sender-name").value,
+    message: document.getElementById("email-message").value,
+    email: document.getElementById("sender-email").value,
+  };
+
+  // $("#email-sent-msg").dialog("open");
+  // $(".ui-widget-header").css("background", "hsl(210.5, 78.7%, 46.1%)");
+  // $(".ui-button .ui-corner-all .ui-widget").css(
+  //   "background",
+  //   "hsl(210.5, 78.7%, 46.1%)"
+  // );
+  // $(".ui-dialog-title").css("color", "#FFF");
+
+  emailjs
+    .send("service_xmpvb56", "template_kjj3j48", tempParams)
+    .then(function (res) {
+      $("#email-sent-msg").dialog("open");
+      $(".ui-widget-header").css("background", "hsl(210.5, 78.7%, 46.1%)");
+      $(".ui-button .ui-corner-all .ui-widget").css(
+        "background",
+        "hsl(210.5, 78.7%, 46.1%)"
+      );
+      $(".ui-dialog-title").css("color", "#FFF");
+    });
+}
